@@ -1,0 +1,18 @@
+//commands for vlan configuration with CLI
+
+
+en
+conf t
+interface FastEthernet 0/0.1
+encapsulation dot1q 10
+ip address 192.168.10.1(dg) 255.255.255.0
+exit
+
+//repeat
+en
+conf t
+interface FastEthernet 0/0.2
+encapsulation dot1q 20
+ip address 192.168.10.2(dg) 255.255.255.0
+exit
+
